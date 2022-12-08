@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Encode+Sans+Semi+Expanded:wght@100;300;600&family=Poppins:wght@300;400;600&family=Roboto:wght@900&display=swap');
+
+$bgColor:#272b30;
+$boxBgColor:#32383e;
+$bgTransparent:rgba(36,186,239,.6) ;
+$fontColor:#aaa;
+$secondFontColor:#49acff;
+$fontfamily: 'Encode Sans Semi Expanded', sans-serif;
+
+body{
+    background-color:$bgColor ;
+color:$fontColor ;
+font-family: $fontfamily;
+}
+
