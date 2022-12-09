@@ -31,18 +31,18 @@ export default function Navbar({userData ,logOut}) {
         
         
         <li className="nav-item dropdown">
-  <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
   Platforms
-  </a>
+  </Link>
   <ul className="dropdown-menu bg-dark ">
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`platform/pc`} >PC</NavLink></li>
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`platform/browser`}>Browser</NavLink></li>
   </ul>
 </li>
         <li className="nav-item dropdown ">
-  <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
   Sort-by
-  </a>
+  </Link>
   <ul className="dropdown-menu bg-dark">
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`sortby/release-date`} >Release-date</NavLink></li>
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`sortby/popularity`}>Popularity</NavLink></li>
@@ -51,9 +51,9 @@ export default function Navbar({userData ,logOut}) {
   </ul>
 </li>
         <li className="nav-item dropdown">
-  <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <Link className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
   Categories
-  </a>
+  </Link>
   <ul className="dropdown-menu bg-dark ">
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`category/racing`}>Racing</NavLink></li>
     <li><NavLink className="dropdown-item bg-transparent text-white" to={`category/sports`}>Sports</NavLink></li>

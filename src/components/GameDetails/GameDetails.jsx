@@ -31,7 +31,7 @@ export default function GameDetails() {
           setGameDetail(data);
           setMinRequirements(minResponse)
           setScreenData(screenResponse)
-          console.log(screenResponse);
+          // console.log(screenResponse);
           setIsLoading(false)
           
         

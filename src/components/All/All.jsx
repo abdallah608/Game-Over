@@ -20,7 +20,7 @@ const options = {
     axios.request(options).then(function (response) {
       setGameItem(response.data);
       setIsLoading(false)
-      console.log(response.data);
+      // console.log(response.data);
     }).catch(function (error) {
       setIsLoading(true)
       console.error(error);
@@ -59,8 +59,8 @@ return (
   
     <button  className="btn btn-secondary btn-sm rounded-3">  <i className="fa-solid fa-plus"></i></button>
     <div className="d-flex justify-content-between align-items-center ">
-    <a className="btn btn-secondary btn-sm rounded-3 me-1 rounded-pill"> {item.genre} </a>
-    {item.platform == "Web Browser"?    <a  className="btn btn-secondary btn-sm rounded-3">  <i className="fa-solid fa-laptop"></i></a> :<a  className="btn btn-secondary btn-sm rounded-3">  <i className="fa-brands fa-windows"></i></a>}
+    <button className="btn btn-secondary btn-sm rounded-3 me-1 rounded-pill"> {item.genre} </button>
+    {item.platform == "Web Browser"?    <button  className="btn btn-secondary btn-sm rounded-3">  <i className="fa-solid fa-laptop"></i></button> :<button  className="btn btn-secondary btn-sm rounded-3">  <i className="fa-brands fa-windows"></i></button>}
     
     </div>
     </div>

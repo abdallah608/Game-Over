@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     axios.request(options).then(function (response) {
       setGameItem(response.data);
-      console.log(response.data);
+      // console.log(response.data);
       setIsLoading(false)
 
     }).catch(function (error) {
@@ -84,8 +84,8 @@ export default function Home() {
       
         <button href="#" className="btn btn-secondary btn-sm rounded-3">  <i className="fa-solid fa-plus"></i></button>
         <div className="d-flex justify-content-between align-items-center ">
-        <a className="btn btn-secondary btn-sm rounded-3 me-1 rounded-pill"> {item.genre} </a>
-         <a  className="btn btn-secondary btn-sm rounded-3 "> <i className="fa-brands fa-windows"></i></a> 
+        <button className="btn btn-secondary btn-sm rounded-3 me-1 rounded-pill"> {item.genre} </button>
+         <button  className="btn btn-secondary btn-sm rounded-3 "> <i className="fa-brands fa-windows"></i></button> 
         
         </div>
         </div>

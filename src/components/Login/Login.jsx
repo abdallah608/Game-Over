@@ -36,7 +36,7 @@ let validateFormData=()=>{
     }
     else{
       let {data}=  await axios.post("https://sticky-note-fe.vercel.app/signin" , user)
-      console.log(data); 
+      // console.log(data); 
       if(data.message=="success"){
         localStorage.setItem('token',data.token);
         saveUserData();
@@ -53,7 +53,7 @@ let validateFormData=()=>{
     let myUser={...user};
     myUser[e.target.name]=e.target.value;
     setUser(myUser);
-    console.log(myUser);
+    // console.log(myUser);
   }
   return (
     <>
