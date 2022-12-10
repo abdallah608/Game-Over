@@ -92,29 +92,38 @@ export default function GameDetails() {
 
         {/* slider */}
 
-
       
+        {screenData == null?"":<>
       
+        <h5 className='pt-4 pb-2 fw-bolder' >{gameDetail.title} Global Screenshots</h5>
 
-      {screenData ==null?"":<>
-      <h5 className='pt-4 pb-2 fw-bolder' >{gameDetail.title} Global Screenshots</h5>
-      <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    
+   {screenData.map((item,id)=>
+   
+   <div key={id}  className="carousel-item active">
+   <img src={item.image} className="d-block w-100"  />
+   </div>
 
-        <div  className="carousel-inner">
-  {screenData.map((item,id)=>
-            <div key={id}  className="carousel-item active">
-            <img src={item.image} className="d-block w-100"  />
-            </div>
-        
-        )
-      }  
-      </div>
-
+   )}
+    
+    
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon d-none" aria-hidden="true" />
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span className="carousel-control-next-icon d-none" aria-hidden="true" />
+    <span className="visually-hidden">Next</span>
+  </button>
 </div>
 
       
       
       </>}
+
 
 
 
